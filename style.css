@@ -1,0 +1,596 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+div.logoAndnavbar{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+section.navigationBar{
+    display: flex;
+    width: 90%;
+}
+
+section.navigationBar > a{
+    font-size: 20px;
+    border-right: groove;
+    padding: 1%;
+}
+
+
+div.headerAndContent{
+    width: 1366px;
+    margin: auto;
+}
+
+section.slideshow{
+    border-top: groove;
+    padding-top: 3%;
+    position: relative;
+    margin-bottom: 3%;
+}
+
+section.slideshow > div.slidePiece{
+    width: 100%;
+}
+
+
+
+section.slideshow > div.slidePiece > img{
+    width: inherit;
+    bottom: 0%;
+}
+
+div.IconsDiv:last-child{
+    border-right-style: none;
+}
+
+div.IconsDiv:hover{
+    background-color: #f76e59;
+    color: white;
+    border-right: groove;
+}
+
+section.icons{
+    border-top: groove;
+    padding-top: 3%;
+    border-color: #f6f6f6;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+
+section.icons > div {
+    border-right: groove;
+    text-align: center;
+}
+
+img.icon{
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+}
+
+img.logo{
+    width: 15%;
+}
+
+section.navigationBar{
+    text-transform: uppercase;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+div.recentWorkDiv{
+    border-top: groove;
+    padding-top: 3%;
+}
+
+.navLink:last-child{
+    border-right-style: none;
+}
+
+section.navigationBar > a:hover{
+    background-color: #f76e59;
+    cursor: grab;
+    padding-right: 2px;
+    margin-right: 2px;
+}
+
+p.description1{
+    
+    text-align: center;
+    font-weight: bold;
+    border-top: groove;
+    padding-top: 3%;
+}
+
+p.description2{
+    border-bottom-style: groove;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+em{
+    color: #f76e59;
+}
+
+section.recentWorkSection{
+    display: flex;
+    width: 100%;
+    padding-bottom: 5%;
+}
+
+div.recentPhotoDiv{
+    position: relative;
+    background-color: #f8f8f8;
+    width: 25%;
+    height: 5%;
+    padding-bottom: 2%;
+}
+
+div.recentPhotoDiv > img{
+    width: 100%;
+}
+
+div.HiddenText{
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    margin: 10%;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    color: white;
+}
+
+p.hiddenTextLine1{
+    font-size: 35px;
+}
+
+p.hiddenTextLine2{
+    text-transform: uppercase;
+    font-size: 35px;
+    color:rgb(73, 71, 71);
+}
+
+div.recentPhotoDiv:hover img.recentPhoto{
+    visibility: hidden;
+}
+
+div.recentPhotoDiv:hover{
+    background-color: #f76e59;
+}
+
+p.recentPhotoDescription{
+    font-size: large;
+    text-align: left;
+    margin-top: 5px;
+}
+
+div.recentPhotoDiv:hover p.recentPhotoDescription{
+    visibility: hidden;
+}
+
+div.recentPhotoDiv:hover div.HiddenText{
+    visibility: visible;
+}
+
+footer.footer{
+    background-color: rgb(73, 71, 71);
+    width: inherit;
+    color: white;
+}
+
+div.wordpressWrapperDiv{
+    display: flex;
+    justify-content: center;
+}
+
+div.wordpress{
+    align-content: center;
+    display: flex;
+    width: 68%;
+    background-color: #333333;
+}
+
+div.footerFirstLine{
+    display: flex;
+    justify-content: center;
+
+}
+
+section.FooterLists{
+    margin-top: 2%;
+    display: flex;
+    width: 68%;
+}
+
+li{
+    padding-bottom: 15px;
+}
+
+em.footerText{
+    color: white;
+}
+
+li.latestTweetsText{
+    list-style-type: none;
+    padding-left: 50px;
+
+    width: 100px;
+}
+
+h1.iconsHeader{
+    text-transform: uppercase;
+}
+
+div.FooterList{
+    color: white;
+    float: left;
+    width: 25%;
+}
+
+
+
+div.FooterList h2{
+    text-transform: uppercase;
+}
+
+#overlay{
+    position: fixed; 
+    display: none; 
+    width: 100%; 
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); 
+    z-index: 0;
+    cursor: pointer;
+}
+
+
+div.slideButton1{
+    position: absolute;
+    background-color: #444444;
+    width: 35px;
+    height: 35px;
+    left: 0;
+    bottom: 0.5%;
+}
+
+div.slideButton2{
+    position: absolute;
+    background-color: #444444;
+    width: 35px;
+    height: 35px;
+    left: 36px;
+    bottom: 0.5%;
+}
+
+p.slideText{
+    margin: 2%;
+}
+
+div.slideButton1Line1 {
+    width: 40px;
+    height: 47px;
+    border-bottom: 1px solid white;
+    transform:
+        translateY(-30px)
+        translateX(30px)
+        rotate(-27deg); 
+}
+
+div.slideButton1Line2 {
+    width: 40px;
+    height: 47px;
+    border-bottom: 1px solid white;
+    transform:
+        translateY(22px)
+        translateX(65px)
+        rotate(26deg);
+    position: absolute;
+    top: -33px;
+    left: -13px;
+}
+
+div.slideButton2Line1 {
+    width: 40px;
+    height: 47px;
+    border-bottom: 1px solid white;
+    transform:
+        translateY(-30px)
+        translateX(30px)
+        rotate(27deg); 
+    position: absolute;
+}
+
+div.slideButton2Line2 {
+    width: 40px;
+    height: 47px;
+    border-bottom: 1px solid white;
+    transform:
+        translateY(22px)
+        translateX(20px)
+        rotate(-26deg);
+    position: absolute;
+    top: -33px;
+    left: -13px;
+}
+
+
+div.slideDescription{
+    position: absolute;
+    background-color: #444444;
+    width: 30%;
+    height: 35px;
+    left: 72px;
+    bottom: 0.5%;
+
+    text-align: center; 
+    color: white
+}
+
+img.closeButton{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    width: 30px;
+    height: 30px;
+    background: url('Sprites/sprite_1.png') 0 0;
+}
+
+img.enlargeButton{
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    width: 30px;
+    height: 30px;
+    background: url('Sprites/sprite_1.png') 0px -27px;
+}
+
+img.previous{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    width: 28px;
+    height: 30px;
+    background: url('Sprites/sprite_1.png') -25px 0px;
+}
+
+img.next{
+    position: absolute;
+    left: 5%;
+    bottom: 0%;
+    width: 28px;
+    height: 30px;
+    background: url('Sprites/sprite_1.png') -75px 0px;
+}
+
+div.portraitDescription{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+div.modal{
+    border-radius: 5px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 1; 
+    background-color: #f8f8f8;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+@keyframes animatetop {
+    from {top:-300px; right: -300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; right: -300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+
+#modalImg{
+    width: 400px;
+    height: 600px;
+    margin-top: 8px;
+    margin-right: 8px;
+    margin-left: 8px;
+    margin-bottom: 15px;
+}
+
+div.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  h1.recentWorkHeader{
+      font-size: 25px;
+  }
+
+  @media only screen and (max-width: 575px){
+   
+
+    div.modal{
+        border-radius: 5px;
+        position: fixed;
+        width: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+        z-index: 1; 
+        background-color: #f8f8f8;
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s
+    }
+
+    #modalImg{
+        width: calc(100% - 16px);
+        margin-top: 8px;
+        margin-right: 8px;
+        margin-left: 8px;
+        margin-bottom: 15px;
+    }
+
+    img.logo{
+        width: calc(100% - 20px);
+    }
+
+    section.navigationBar > a{
+        font-size: 30px;
+        border-right-style: none;
+    }
+    
+    div.headerAndContent{
+        width: 100%;
+    }
+
+    div.logoAndnavbar{
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    section.navigationBar{
+        text-transform: uppercase;
+    
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-end;
+    }
+
+    section.recentWorkSection{
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    div.recentPhotoDiv{
+        width: 100%;
+    }
+    
+    section.icons{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    
+
+    section.icons > div {
+        border-right-style: none;
+        border-bottom: groove;
+        margin: 2%;
+    }
+
+    div.IconsDiv:last-child{
+        border-bottom-style: none;
+    }
+
+    section.FooterLists{
+        display: flex;
+        flex-flow: column wrap;
+    }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 576px){
+    div.headerAndContent{
+        width: 100%;
+    }
+
+    section.icons > div {
+        border-bottom: groove;
+        border-right-style: none;
+        margin: 2%;
+        padding-bottom: 2%;
+    }
+    
+    section.icons{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    section.recentWorkSection{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    div.recentPhotoDiv{
+        flex: 50%;
+    }
+
+
+}
